@@ -28,7 +28,8 @@ namespace RazorPagesTurtle3.Models
                         TurtleName = "FlubbaDubba",
                         ReleaseDate = DateTime.Parse("1949-8-24"),
                         Type = "Tortoise",
-                        Price = 232.00M
+                        Price = 232.00M,
+                        Rating = "T1"
                     },
 
                     new Turtle
@@ -36,7 +37,8 @@ namespace RazorPagesTurtle3.Models
                         TurtleName = "Chimichanga",
                         ReleaseDate = DateTime.Parse("2015-12-24"),
                         Type = "Sea Turtle",
-                        Price = 125.50M
+                        Price = 125.50M,
+                        Rating = "T1"
                     },
 
                     new Turtle
@@ -44,7 +46,8 @@ namespace RazorPagesTurtle3.Models
                         TurtleName = "Swim",
                         ReleaseDate = DateTime.Parse("2018-11-27"),
                         Type = "Sea Turtle",
-                        Price = 58.98M
+                        Price = 58.98M,
+                        Rating = "T1"
                     },
 
                     new Turtle
@@ -52,7 +55,8 @@ namespace RazorPagesTurtle3.Models
                         TurtleName = "Boxer",
                         ReleaseDate = DateTime.Parse("2020-1-1"),
                         Type = "Western Box Turtle",
-                        Price = 15.00M
+                        Price = 15.00M,
+                        Rating = "T1"
                     }
                 );
                 context.SaveChanges();

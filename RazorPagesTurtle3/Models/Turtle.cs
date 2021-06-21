@@ -17,5 +17,6 @@ namespace RazorPagesTurtle3.Models
         public string Type { get; set; }
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
+        public string Rating { get; set; }
     }
 }
