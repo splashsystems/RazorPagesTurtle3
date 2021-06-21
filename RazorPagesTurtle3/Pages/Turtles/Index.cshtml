@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{searchString?}"
 @model RazorPagesTurtle3.Pages.Turtles.IndexModel
 
 @{
@@ -10,6 +10,15 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+<form>
+    <p>
+        <select asp-for="TurtleType" asp-items="Model.Types">
+            <option value="">All</option>
+        </select>
+        Turtle Name: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -29,7 +38,7 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Turtle) {
+        @foreach (var item in Model.Turtle) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.TurtleName)
